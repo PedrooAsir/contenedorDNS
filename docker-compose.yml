@@ -1,6 +1,6 @@
 services:
   bind9:
-    image: internetsystemsconsortium/bind9:9.18
+    image: ubuntu/bind9
     container_name: asir_bind9
     ports:
           - "53:53"
