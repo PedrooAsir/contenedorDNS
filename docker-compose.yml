@@ -1,0 +1,17 @@
+services:
+  bind9:
+    image: internetsystemsconsortium/bind9:9.18
+    container_name: asir_bind9
+    ports:
+          - "53:53"
+    networks:
+      bind9_subnet_asir2:
+            ipv4_address: 172.28.5.1
+    volumes:
+          - ./conf:/etc/bind
+          - ./zonas:/var/lib/bind
+    environment:
+          - TZ=Europe/París
+networks:
+      bind9_subnet_asir2:
+            external: true
