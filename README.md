@@ -28,3 +28,8 @@ Para meterse dentro del contenedor , lo buscamos y hacemos clic derecho donde le
 
 $apt update
 $apt install -y dnsutils
+
+
+# Dig Alpine:
+
+$apk add --no-cache bind-tools
