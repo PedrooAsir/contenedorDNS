@@ -33,3 +33,7 @@ $apt install -y dnsutils
 # Dig Alpine:
 
 $apk add --no-cache bind-tools (Instalar Dig para ¿Cliente?)
+
+# Instalar Ping
+
+apt-get install -y iputils-ping
