@@ -32,4 +32,4 @@ $apt install -y dnsutils
 
 # Dig Alpine:
 
-$apk add --no-cache bind-tools
+$apk add --no-cache bind-tools (Instalar Dig para ¿Cliente?)
