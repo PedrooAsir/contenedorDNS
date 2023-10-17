@@ -13,11 +13,11 @@ Una vez encendidos, accedemos a sus terminales con clic derecho en el contenedor
 
 # Servidor
 
-"docker exec -it [nombre del servidor] bash" 
+"$ docker exec -it [nombre del servidor] bash" 
 
 # cliente
 
-"docker exec -it [nombre del cliente] sh" 
+"$ docker exec -it [nombre del cliente] sh" 
 
 
 Para poder usar los comandos de red haríamos:
@@ -30,7 +30,7 @@ $ apt-get install -y iputils-ping
 
 # Cliente
 
-$apk add --no-cache bind-tools (Para Dig y Ping).
+$ apk add --no-cache bind-tools (Para Dig y Ping).
 ========================================================================
 $TTL 38400	; 10 hours 40 minutes
 @		IN SOA	ns.asircastelao.int. some.email.address. (
