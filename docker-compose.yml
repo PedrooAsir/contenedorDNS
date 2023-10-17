@@ -3,15 +3,27 @@ services:
     image: ubuntu/bind9
     container_name: asir_bind9
     ports:
-          - "53:53"
+      - "53:53"
     networks:
       bind9_subnet_asir2:
-            ipv4_address: 172.28.5.1
+        ipv4_address: 172.28.5.1
     volumes:
-          - ./conf:/etc/bind
-          - ./zonas:/var/lib/bind
+      - ./conf:/etc/bind
+      - ./zonas:/var/lib/bind
     environment:
-          - TZ=Europe/París
-networks:
+      - TZ=Europe/Paris
+
+  cliente:
+    image: alpine
+    container_name: asir_cliente
+    tty: true
+    stdin_open: true
+    dns:
+      - 172.28.5.1
+    networks:
       bind9_subnet_asir2:
-            external: true
+        ipv4_address: 172.28.5.2
+
+networks:
+  bind9_subnet_asir2:
+    external: true
