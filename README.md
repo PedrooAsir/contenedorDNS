@@ -24,7 +24,7 @@ services: → Formará un bloque (x nombre), cada uno con dicha configuración.
 
 # Probar cosas
 
-Para meterse dentro del contenedor , lo buscamos y hacemos clic derecho donde le daremos a "Attach shell"
+Para meterse dentro del contenedor , lo buscamos y hacemos clic derecho donde le daremos a "Attach shell" o escribimos "docker exec -it asir_bin9 bash"
 
 $apt update
 $apt install -y dnsutils
